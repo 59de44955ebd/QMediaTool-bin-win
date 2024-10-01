@@ -1,0 +1,4 @@
+#!/bin/bash
+FFMPEG="${FFMPEG%\"}"
+FFMPEG="${FFMPEG#\"}"
+"$FFMPEG" -hide_banner -progress tcp://localhost:9999 "$@"
